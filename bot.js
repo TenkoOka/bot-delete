@@ -5,7 +5,7 @@ const schedule = require('node-schedule');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
 // Remplacez 'YOUR_DISCORD_TOKEN' par le token de votre bot
-const token = '';
+const token = 'test';
 
 // Remplacez 'YOUR_CHANNEL_ID' par l'ID de votre canal Discord
 const channelId = '1304461111298494534';
@@ -14,7 +14,7 @@ client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 
     // Planifiez la suppression des messages à 22h15 chaque jour
-    schedule.scheduleJob('50 19 * * *', async () => {
+    schedule.scheduleJob('15 20 * * *', async () => {
         try {
             const channel = await client.channels.fetch(channelId);
             console.log(`Channel fetched: ${channel.id}`);

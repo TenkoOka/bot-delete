@@ -5,7 +5,7 @@ const schedule = require('node-schedule');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
 
 // Remplacez 'YOUR_DISCORD_TOKEN' par le token de votre bot
-const token = 'MTMwNTE2NzQxNTI4OTU3NzU1Mg.GasBk1.EhYEjjxrwwfpL_dBoPJpnmXERuKBf6W-IPCpBw';
+const token = '';
 
 // Remplacez 'YOUR_CHANNEL_ID' par l'ID de votre canal Discord
 const channelId = '1304461111298494534';
